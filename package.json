@@ -1,0 +1,35 @@
+{
+  "name": "todo-mcp-server",
+  "version": "1.0.0",
+  "description": "A Todo/Task Manager MCP Server",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "todo-mcp-server": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "test": "node dist/test.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "better-sqlite3": "^11.3.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/node": "^20.0.0",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.0"
+  },
+  "keywords": [
+    "mcp",
+    "todo",
+    "task-manager",
+    "model-context-protocol"
+  ],
+  "author": "Xczer",
+  "license": "MIT"
+}
